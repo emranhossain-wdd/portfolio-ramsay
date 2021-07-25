@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Md Emran Hossain">
+		
+	    <!-- Company Name & Logo -->
+		<title>Md Emran Hossain</title>
+		<!-- company Icon -->
+		<link href="images/logoanb.png" rel="icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		
+		<!-- Fontawesome sheet -->
+		<link href="css/all.css" rel="stylesheet">
+		 
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- LightBox CSS -->
+		<link href="css/lightbox.css" rel="stylesheet">
+		<!-- OwlCrousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<!-- Wow CSS -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- Style sheet -->
+		<link href="css/global.css" rel="stylesheet">
+		<!-- Style sheet -->
+		<link href="css/style.css" rel="stylesheet">
+		
+	 </head>
+	 <body>
+		<header class="fixed-top">
+		</header>
+		<main>
+			<!-- ==Testimonials/Review Section== -->
+			<section class="bg-size-cover" id="reviews">
+				<div class="text-white-15 position-absolute line-height-1 h1-3x bottom-375 left-n275 transform-rotate-n90">
+					testimonials
+				</div>
+				<div class="container pt-5">
+					<div class="row text-white border-top">
+						<div class="col-md-5">
+							<div class="font-weight mb-2">DAVID & ELISA</div>
+							<i>Apartment view lake at Brooklyn</i>
+						</div>
+						<div class="col-md-7">
+							<p>If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Ramsay Studio is perfect.</p>
+						</div>
+					</div>
+					<div class="row text-white border-top">
+						<div class="col-md-5">
+							<div  class="font-weight mb-2">AMANDA</div>
+							<i>Apartment view lake at Brooklyn</i>
+						</div>
+						<div class="col-md-7">
+							<p>If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Ramsay Studio is perfect.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+		</footer>
+		  
+		  
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/lightbox-plus-jquery.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script>
+			new WOW().init();
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		</script>
+		<script>
+			var $lulu = $('.kaissa').isotope({
+			  // options
+			  itemSelector: '.baissa',
+			  layoutMode: 'fitRows'
+			});	
+			
+			// filter items on button click
+			$('#portfolioFilter').on( 'click', 'button', function() {
+			  var filterValue = $(this).attr('data-filter');
+			  $lulu.isotope({ filter: filterValue });
+			});
+			
+			// change active class on buttons
+			$('#portfolioFilter').each( function( i, targetBtn ) {
+			  var $actionBtn = $( targetBtn );
+			  $actionBtn.on( 'click', 'button', function() {
+				$actionBtn.find('.active').removeClass('active');
+				$( this ).addClass('active');
+			  });
+			});
+		</script>
+	 
+		<script>
+			$(document).ready(function(){
+				  $(".owl-carousel").owlCarousel({
+					items:4,
+					loop:true,
+					margin:2,
+					autoplay:true,
+					autoplayTimeout:1000,
+					autoplayHoverPause:true,
+					nav:true,
+					dots:false,
+					responsive:{
+						0:{
+							items:2,
+						},
+						600:{
+							items:3,
+						},
+						1000:{
+							items:4,
+						},
+						1300:{
+							items:5,
+						}
+					}
+				});
+			});			
+		</script>
+		<script>
+						
+		</script>
+	</body>
+       
+</html>
+
+
+
+
+
